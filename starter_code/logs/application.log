@@ -1,0 +1,5 @@
+2023-11-07 23:44:06,404 [main] INFO  com.example.demo.SareetaApplicationTests - Starting SareetaApplicationTests on LAPTOP-7BT04FRS with PID 19336 (started by Vlad Bonite in C:\Users\Vlad Bonite\Desktop\Java Web Developer\course4\project\nd035-c4-Security-and-DevOps\starter_code)
+2023-11-07 23:44:06,405 [main] INFO  com.example.demo.SareetaApplicationTests - No active profile set, falling back to default profiles: default
+2023-11-07 23:45:30,071 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY ID] -> id with ->1
+2023-11-07 23:45:30,087 [main] INFO  com.example.demo.controllers.UserController - [CREATE USER] -> name set with ->user
+2023-11-07 23:45:30,091 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY USERNAME] -> username with ->user
