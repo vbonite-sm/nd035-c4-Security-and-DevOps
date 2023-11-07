@@ -3,3 +3,9 @@
 2023-11-07 23:45:30,071 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY ID] -> id with ->1
 2023-11-07 23:45:30,087 [main] INFO  com.example.demo.controllers.UserController - [CREATE USER] -> name set with ->user
 2023-11-07 23:45:30,091 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY USERNAME] -> username with ->user
+2023-11-07 23:51:55,666 [main] INFO  com.example.demo.controllers.OrderController - Submitted order of user user
+2023-11-07 23:52:29,473 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY ID] -> id with ->1
+2023-11-07 23:52:29,488 [main] INFO  com.example.demo.controllers.UserController - [CREATE USER] -> name set with ->user
+2023-11-07 23:52:29,489 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY USERNAME] -> username with ->user
+2023-11-07 23:52:39,220 [main] INFO  com.example.demo.controllers.OrderController - Submitted order of user user
+2023-11-07 23:52:51,422 [main] INFO  com.example.demo.controllers.ItemController - [GET ITEM BY ID] -> itemId you input is : 1
