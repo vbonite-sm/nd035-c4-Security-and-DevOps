@@ -11,3 +11,17 @@
 2023-11-07 23:52:51,422 [main] INFO  com.example.demo.controllers.ItemController - [GET ITEM BY ID] -> itemId you input is : 1
 2023-11-08 00:30:25,376 [main] INFO  com.example.demo.controllers.CartController - [REMOVE FROM USER] -> {SUCCESS} REMOVE cartid -> 1, quantity ->1, from user ->user
 2023-11-08 00:30:25,393 [main] INFO  com.example.demo.controllers.CartController - [ADD TO CART] -> {SUCCESS} save the new item for user : user
+2023-11-08 00:46:27,569 [main] INFO  com.example.demo.controllers.CartController - [REMOVE FROM USER] -> {SUCCESS} REMOVE cartid -> 1, quantity ->1, from user ->user
+2023-11-08 00:46:27,588 [main] INFO  com.example.demo.controllers.CartController - [ADD TO CART] -> {SUCCESS} save the new item for user : user
+2023-11-08 00:46:44,442 [main] INFO  com.example.demo.controllers.ItemController - [GET ITEM BY ID] -> itemId you input is : 1
+2023-11-08 00:51:49,847 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY ID] -> id with ->1
+2023-11-08 00:51:49,864 [main] INFO  com.example.demo.controllers.UserController - [CREATE USER] -> name set with ->user
+2023-11-08 00:51:49,864 [main] INFO  com.example.demo.controllers.UserController - [CREATE CART] -> get id from cart ->null
+2023-11-08 00:51:49,865 [main] INFO  com.example.demo.controllers.UserController - [CREATE USER] -> {SUCCESS} Save username: user
+2023-11-08 00:51:49,865 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY USERNAME] -> username with ->user
+2023-11-08 00:51:58,606 [main] INFO  com.example.demo.controllers.OrderController - [GET HISTORY BY USERNAME] -> {SUCCESS} display the history from user
+2023-11-08 00:51:58,620 [main] INFO  com.example.demo.controllers.OrderController - [SUBMIT ORDER] -> {SUCCESS} save a new submitted order from user -> user
+2023-11-08 00:52:08,272 [main] INFO  com.example.demo.controllers.ItemController - [GET ITEM BY NAME] -> item name you input is : item
+2023-11-08 00:52:08,294 [main] INFO  com.example.demo.controllers.ItemController - [GET ITEM BY ID] -> itemId you input is : 1
+2023-11-08 00:52:24,429 [main] INFO  com.example.demo.controllers.CartController - [REMOVE FROM USER] -> {SUCCESS} REMOVE cartid -> 1, quantity ->1, from user ->user
+2023-11-08 00:52:24,448 [main] INFO  com.example.demo.controllers.CartController - [ADD TO CART] -> {SUCCESS} save the new item for user : user

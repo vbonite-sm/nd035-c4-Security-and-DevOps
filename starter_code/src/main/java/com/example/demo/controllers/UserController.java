@@ -62,8 +62,10 @@ public class UserController {
 		Cart cart = new Cart();
 		cartRepository.save(cart);
 		user.setCart(cart);
+		log.debug("Set Cart into the user", user.getCart());
+		log.info("[CREATE CART] -> get id from cart ->" + cart.getId());
 		userRepository.save(user);
-		log.debug(HttpStatus.CREATED + " Created User Successfully");
+		log.info("[CREATE USER] -> {SUCCESS} Save username: " + user.getUsername());
 		return ResponseEntity.ok(user);
 	}
 	

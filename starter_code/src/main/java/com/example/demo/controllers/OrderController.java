@@ -37,12 +37,12 @@ public class OrderController {
 		log.debug("Submitting order of username {}", username);
 		User user = userRepository.findByUsername(username);
 		if(user == null) {
-			log.error("Could not find user with username {}", username);
+			log.error("[SUBMIT ORDER] -> {FAIL} username "+username+" is not found in db.");
 			return ResponseEntity.notFound().build();
 		}
 		UserOrder order = UserOrder.createFromCart(user.getCart());
 		orderRepository.save(order);
-		log.info("Submitted order of user {}", username);
+		log.info("[SUBMIT ORDER] -> {SUCCESS} save a new submitted order from user -> "+order.getUser().getUsername());
 		return ResponseEntity.ok(order);
 	}
 	
@@ -51,9 +51,10 @@ public class OrderController {
 		log.debug("Get orders for user {}", username);
 		User user = userRepository.findByUsername(username);
 		if(user == null) {
-			log.error("Could not find user with username {}", username);
+			log.error("[GET HISTORY BY USERNAME] -> {FAIL} username "+username +" cannot find from db.");
 			return ResponseEntity.notFound().build();
 		}
+		log.info("[GET HISTORY BY USERNAME] -> {SUCCESS} display the history from "+ user.getUsername());
 		return ResponseEntity.ok(orderRepository.findByUser(user));
 	}
 }
