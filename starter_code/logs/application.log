@@ -9,3 +9,5 @@
 2023-11-07 23:52:29,489 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY USERNAME] -> username with ->user
 2023-11-07 23:52:39,220 [main] INFO  com.example.demo.controllers.OrderController - Submitted order of user user
 2023-11-07 23:52:51,422 [main] INFO  com.example.demo.controllers.ItemController - [GET ITEM BY ID] -> itemId you input is : 1
+2023-11-08 00:30:25,376 [main] INFO  com.example.demo.controllers.CartController - [REMOVE FROM USER] -> {SUCCESS} REMOVE cartid -> 1, quantity ->1, from user ->user
+2023-11-08 00:30:25,393 [main] INFO  com.example.demo.controllers.CartController - [ADD TO CART] -> {SUCCESS} save the new item for user : user
