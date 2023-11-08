@@ -25,3 +25,20 @@
 2023-11-08 00:52:08,294 [main] INFO  com.example.demo.controllers.ItemController - [GET ITEM BY ID] -> itemId you input is : 1
 2023-11-08 00:52:24,429 [main] INFO  com.example.demo.controllers.CartController - [REMOVE FROM USER] -> {SUCCESS} REMOVE cartid -> 1, quantity ->1, from user ->user
 2023-11-08 00:52:24,448 [main] INFO  com.example.demo.controllers.CartController - [ADD TO CART] -> {SUCCESS} save the new item for user : user
+2023-11-08 11:02:09,851 [main] INFO  com.example.demo.SareetaApplicationTests - Starting SareetaApplicationTests on LAPTOP-7BT04FRS with PID 8392 (started by Vlad Bonite in C:\Users\Vlad Bonite\Desktop\Java Web Developer\course4\project\nd035-c4-Security-and-DevOps\starter_code)
+2023-11-08 11:02:09,856 [main] INFO  com.example.demo.SareetaApplicationTests - No active profile set, falling back to default profiles: default
+2023-11-08 11:02:17,973 [main] INFO  com.example.demo.SareetaApplicationTests - Started SareetaApplicationTests in 8.433 seconds (JVM running for 10.527)
+2023-11-08 11:02:36,472 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY ID] -> id with ->1
+2023-11-08 11:02:36,508 [main] INFO  com.example.demo.controllers.UserController - [CREATE USER] -> name set with ->user
+2023-11-08 11:02:36,509 [main] INFO  com.example.demo.controllers.UserController - [CREATE CART] -> get id from cart ->null
+2023-11-08 11:02:36,511 [main] INFO  com.example.demo.controllers.UserController - [CREATE USER] -> {SUCCESS} Save username: user
+2023-11-08 11:02:36,513 [main] INFO  com.example.demo.controllers.UserController - [GET USER BY USERNAME] -> username with ->user
+2023-11-08 11:02:47,931 [main] INFO  com.example.demo.controllers.OrderController - [GET HISTORY BY USERNAME] -> {SUCCESS} display the history from user
+2023-11-08 11:02:47,957 [main] INFO  com.example.demo.controllers.OrderController - [SUBMIT ORDER] -> {SUCCESS} save a new submitted order from user -> user
+2023-11-08 11:03:01,411 [main] INFO  com.example.demo.controllers.ItemController - [GET ITEM BY NAME] -> item name you input is : item
+2023-11-08 11:03:01,453 [main] INFO  com.example.demo.controllers.ItemController - [GET ITEM BY ID] -> itemId you input is : 1
+2023-11-08 11:03:13,963 [main] INFO  com.example.demo.controllers.CartController - [REMOVE FROM USER] -> {SUCCESS} REMOVE cartid -> 1, quantity ->1, from user ->user
+2023-11-08 11:03:14,000 [main] INFO  com.example.demo.controllers.CartController - [ADD TO CART] -> {SUCCESS} save the new item for user : user
+2023-11-08 11:04:15,145 [main] INFO  com.example.demo.SareetaApplicationTests - Starting SareetaApplicationTests on LAPTOP-7BT04FRS with PID 22776 (started by Vlad Bonite in C:\Users\Vlad Bonite\Desktop\Java Web Developer\course4\project\nd035-c4-Security-and-DevOps\starter_code)
+2023-11-08 11:04:15,147 [main] INFO  com.example.demo.SareetaApplicationTests - No active profile set, falling back to default profiles: default
+2023-11-08 11:04:23,107 [main] INFO  com.example.demo.SareetaApplicationTests - Started SareetaApplicationTests in 8.259 seconds (JVM running for 10.577)

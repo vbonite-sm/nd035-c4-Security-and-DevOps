@@ -4,6 +4,8 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.example.demo.model.persistence.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -18,8 +20,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 
+import static com.auth0.jwt.algorithms.Algorithm.HMAC512;
+
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
+    Logger log = LoggerFactory.getLogger(JWTAuthenticationFilter.class);
     private AuthenticationManager authenticationManager;
 
     public JWTAuthenticationFilter(AuthenticationManager authenticationManager) {
@@ -38,6 +43,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 )
             );
         } catch (IOException e) {
+            log.warn("[Exception] -> Username or Password wrong!! ");
             throw new RuntimeException(e);
         }
     }
@@ -46,7 +52,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     public void successfulAuthentication(HttpServletRequest req, HttpServletResponse res, FilterChain chain, Authentication auth) throws IOException, ServletException {
         String token = JWT.create().withSubject(((org.springframework.security.core.userdetails.User) auth.getPrincipal()).getUsername())
                 .withExpiresAt(new Date(System.currentTimeMillis() + SecurityConstants.EXPIRATION_TIME))
-                .sign(Algorithm.HMAC512(SecurityConstants.SECRET.getBytes()));
+                .sign(HMAC512(SecurityConstants.SECRET.getBytes()));
         res.addHeader(SecurityConstants.HEADER_STRING, SecurityConstants.TOKEN_PREFIX + token);
     }
 }
